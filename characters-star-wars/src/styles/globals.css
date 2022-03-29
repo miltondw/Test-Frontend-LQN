@@ -14,3 +14,51 @@ a {
 * {
   box-sizing: border-box;
 }
+.content-planets__tag {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+.content-list {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 3em;
+}
+.header-title {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.films-card {
+  width: 70%;
+  margin: 1em;
+  box-shadow: 0.5px 0.5px 5px 0px;
+}
+.drawer {
+  width: 70%;
+}
+.drawer-closed {
+  position: absolute;
+  top: 0.5em;
+  background: red;
+  color: white;
+  right: 1em;
+  border: none;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  font-size: 1.2em;
+}
+@media screen and (min-width: 768px) {
+  .header-title {
+    font-size: 3em;
+  }
+  .films-card {
+    width: 70%;
+  }
+  .drawer {
+    width: 70%;
+  }
+}
