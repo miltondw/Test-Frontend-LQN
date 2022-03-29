@@ -14,3 +14,7 @@ de Star Wars.
 **Client:** Nextjs, TypeScript, GraphQL-Apollo, Antd
 
 **API:** https://swapi.loquenecesito.co/graphql/
+
+## Demo
+
+https://characters-start-wars.vercel.app/?character=Luke%20Skywalker
