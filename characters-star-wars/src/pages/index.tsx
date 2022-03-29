@@ -34,33 +34,30 @@ const Home = ({ personajes, personaje }: DataCharacters) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <main>
-          <Header className="header">
-            <h1 className="header-title">
-              Characters{" "}
-              <a
-                href="https://www.starwars.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Star Wars
-              </a>
-            </h1>
-          </Header>
-          <Content>
-            <ListCharacters personajes={personajes} />
-            {router.query.character && (
-              <DetailsCharacter personaje={personaje} />
-            )}
-          </Content>
-        </main>
+        <Header className="header">
+          <h1 className="header-title">
+            Characters
+            {"  "}
+            <a
+              href="https://www.starwars.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Star Wars
+            </a>
+          </h1>
+        </Header>
+        <Content>
+          <ListCharacters personajes={personajes} />
+          {router.query.character && <DetailsCharacter personaje={personaje} />}
+        </Content>
         <Footer>
           <a
             href="https://github.com/miltondw"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Creado por MiltonWd
+            Created by MiltonWd
           </a>
         </Footer>
       </Layout>

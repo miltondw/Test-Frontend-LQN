@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { List, Avatar } from "antd";
+import { List, Avatar, Button } from "antd";
 import { DataListCharacter } from "../types/Types";
 import { useContext } from "react";
 import { CharacterContext } from "../context/CharacterContext";
@@ -23,7 +23,7 @@ const ListCharacters = ({ personajes }: DataListCharacter) => {
             <List.Item.Meta
               avatar={<Avatar src="/Star-Wars.png" />}
               title={
-                <button onClick={showDrawer}>
+                <Button type="primary" onClick={showDrawer}>
                   <Link
                     href={`/?character=${encodeURIComponent(
                       personaje.node.name
@@ -31,9 +31,8 @@ const ListCharacters = ({ personajes }: DataListCharacter) => {
                   >
                     {personaje.node.name}
                   </Link>
-                </button>
+                </Button>
               }
-              description="You can see the details of the character"
             />
           </List.Item>
         )}
